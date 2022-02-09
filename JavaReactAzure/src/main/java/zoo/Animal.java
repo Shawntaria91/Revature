@@ -9,7 +9,7 @@ package zoo;
 
 //interfaces are a "contract" of behavior
 //IE, everything that implements comparable has a contract to be a comparable object
-public class Animal implements Comparable {
+public class Animal {
 
     String species;
     int temp = 0;
