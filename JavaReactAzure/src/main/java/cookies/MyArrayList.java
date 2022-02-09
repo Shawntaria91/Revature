@@ -72,9 +72,9 @@ public class MyArrayList {
         cookies.add("salted caramel");
         cookies.add("red velvet");
         cookies.add("oreo");
-        cookies.remove("red velvet");
-        cookies.remove("birthday cake");
-        cookies.remove(2);
+        //cookies.remove("red velvet");
+        //cookies.remove("birthday cake");
+        //cookies.remove(2);
         //for (int i = 1; i <= 100; i++) {
         //    cookies.add("cookie type " + i);
         //}
