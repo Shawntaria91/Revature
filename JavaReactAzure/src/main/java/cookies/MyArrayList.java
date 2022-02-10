@@ -1,28 +1,33 @@
 package cookies;
 
+import java.util.Arrays;
+
 public class MyArrayList {
     //variables needed:
     // Array of something
     // The current amount of something
     // Constructor that creates an initial array of some size
-    private String[] cookieArr = new String[10];
+    private String[] cookieArr = new String[0];
     private int size = 0;
 
     // Add method
     public void add(String cookie) {
-        cookieArr[size] = cookie;
-        size++;
+        if (cookieArr.length > 0 && cookieArr.length != size) {
+            cookieArr[size] = cookie;
+            size++;
 
-        // IE, check if the current amount of somethings+1 is not greater than (or equal to) the array size
-        // if it is greater:
+            // IE, check if the current amount of somethings+1 is not greater than (or equal to) the array size
+            // if it is greater:
             // Copy the elements of the current array to a new array.
             // set the pointer of the arrayList's internal array to the new array.
-        if (size == cookieArr.length) {
-            String[] newArray = new String[cookieArr.length * 2];
+        } else if (size == cookieArr.length) {
+            String[] newArray = new String[cookieArr.length+1 * 2];
             for (int i = 0; i < cookieArr.length; i++) {
                 newArray[i] = cookieArr[i];
             }
             cookieArr = newArray;
+            cookieArr[size] = cookie;
+            size++;
         }
     }
 
@@ -64,6 +69,10 @@ public class MyArrayList {
         }
     }
 
+    public void setCookieArr(String[] cookieArr) {
+        this.cookieArr = cookieArr;
+    }
+
     public static void main(String[] args) {
         MyArrayList cookies = new MyArrayList();
         cookies.add("chocolate chip");
@@ -78,11 +87,22 @@ public class MyArrayList {
         //for (int i = 1; i <= 100; i++) {
         //    cookies.add("cookie type " + i);
         //}
-
+        //System.out.println(Arrays.toString());
         // (this will be the current size)
         for (int i = 0; i < cookies.getSize(); i++) {
-            System.out.println(cookies.get(i));
+
+            if (i == cookies.size - 1) {
+                System.out.print(cookies.get(i) + ". ");
+                break;
+            }
+            System.out.print(cookies.get(i) + ", ");
         }
+        //System.out.println(java.util.Arrays.toString(cookies[]));
+
+        //@Override
+        //public String toString() {
+        //
+        //}
 
         System.out.println("There are " + cookies.getSize() + " cookies in the cookie jar.");
 
