@@ -1,26 +1,31 @@
 package zoo;
 
-public class AnimalBranch {
+public class AnimalBranch<T extends Comparable<T>> {
 
-    private Animal animal;
+    private T animal;
     AnimalBranch left;
     AnimalBranch right;
 
-    public AnimalBranch(Animal a) {
+    //Why the generic constructor??
+    public AnimalBranch() {
+
+    }
+
+    public AnimalBranch(T a) {
         animal = a;
 
     }
 
-    public int compareTo(AnimalBranch a) {
-        return animal.species.compareTo(a.animal.species);
+    public int compareTo(AnimalBranch<T> a) {
+        return animal.compareTo(a.animal);
 
     }
 
-    public Animal getAnimal() {
+    public T getAnimal() {
         return animal;
     }
 
-    public void setAnimal(Animal animal) {
+    public void setAnimal(T animal) {
         this.animal = animal;
     }
 
@@ -38,5 +43,10 @@ public class AnimalBranch {
 
     public void setRight(AnimalBranch right) {
         this.right = right;
+    }
+
+    @Override
+    public String toString() {
+        return animal.toString();
     }
 }

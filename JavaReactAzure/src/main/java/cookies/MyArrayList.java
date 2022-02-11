@@ -69,9 +69,33 @@ public class MyArrayList {
         }
     }
 
-    public void setCookieArr(String[] cookieArr) {
-        this.cookieArr = cookieArr;
-    }
+    //a method that can return a boolean determining if your array list contains a certain item
+    //public boolean equals(SimpleArrayList a) {
+    //    if (a.getArrayItems() != arrayItems) {
+    //        return false;
+    //    } else {
+    //        Object[] aObjects = a.getObjectArray();
+    //        for (int i = 0; i < arrayItems; i++) {
+    //            boolean contains = false;
+    //            for (int j = 0; j < arrayItems; j++) {
+    //                if (aObjects[i].equals(objectArray[j])) {
+    //                    contains = true;
+    //                    break;
+    //                }
+    //            }
+    //            if (!contains) {
+    //                return false;
+    //            }
+    //        }
+    //    }
+    //    return true;
+    //}
+
+    //ArrayList1.equals(ArrayList2)
+
+    //public void setCookieArr(String[] cookieArr) {
+     //   this.cookieArr = cookieArr;
+    //}
 
     public static void main(String[] args) {
         MyArrayList cookies = new MyArrayList();
@@ -97,12 +121,7 @@ public class MyArrayList {
             }
             System.out.print(cookies.get(i) + ", ");
         }
-        //System.out.println(java.util.Arrays.toString(cookies[]));
-
-        //@Override
-        //public String toString() {
-        //
-        //}
+        //System.out.println(Arrays.toString(myCookieArray.cookieArr));
 
         System.out.println("There are " + cookies.getSize() + " cookies in the cookie jar.");
 

@@ -1,8 +1,8 @@
 package zoo;
 
-public class AnimalTree {
+public class AnimalTree<T extends Comparable<T>> {
 
-    AnimalBranch head;
+    AnimalBranch<T> head;
 
     //constructor
     public AnimalTree() {
@@ -14,46 +14,64 @@ public class AnimalTree {
     //if exists, check if left child exists
     //if left child exists, examine left child
     //new branch is greater than curr branch, so check if right child exists
-    //right child does not exis, so we set current.right to a new animalBranch
+    //right child does not exist, so we set current.right to a new animalBranch
 
     //our toolbox:
     //will need to keep track of curr branch
     //will need to continue while an empty slot has not been found
     //will need to check if head is null first
-    public boolean add(Animal a) {
+
+    //return true if adding was successful
+    public boolean add(T a) {
         if (head == null) {
-            System.out.println("Added as head: "+ a.species);
+            Driver.log.info("Added as head: "+ a);
             head = new AnimalBranch(a);
         } else {
             AnimalBranch current = head;
             while(true) {
                 if (current.getAnimal().compareTo(a) < 0) {
-                    System.out.println("Current animal: " + current.getAnimal().species + ", Branching left");
+                    System.out.println("Current animal: " + current.getAnimal() + ", Branching left");
 
                     if (current.left == null) {
                         current.left = new AnimalBranch(a);
-                        System.out.println("Added animal: " + a.species);
+                        System.out.println("Added animal: " + a);
                         return true;
                     } else {
                         current = current.left;
                     }
                 } else if (current.getAnimal().compareTo(a) > 0) {
-                    System.out.println("Current animal: " + current.getAnimal().species + ", Branching right");
+                    Driver.log.info("Current animal: " + current.getAnimal() + ", Branching right");
                     if (current.right == null) {
                         current.right = new AnimalBranch(a);
-                        System.out.println("Added animal: " + a.species);
+                        System.out.println("Added animal: " + a);
                         return true;
                     } else {
                         current = current.right;
                     }
                 } else {
-                    System.out.println("Species " + a.species + "already exists!");
+                    Driver.log.info("Species " + a + "already exists!");
                     return false;
                 }
             }
 
         }
         return false;
+
+    }
+
+    public boolean contains(T a) {
+
+        if (head == null) {
+            System.out.println("Added as head: " + a);
+            return false;
+        } else {
+            AnimalBranch current = head;
+            while(true) {
+                if (current.getAnimal().compareTo(a) < 0) {
+
+                }
+            }
+        }
 
     }
 }

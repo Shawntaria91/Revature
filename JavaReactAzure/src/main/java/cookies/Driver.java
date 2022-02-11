@@ -1,10 +1,15 @@
 package cookies;
 
+import org.apache.log4j.Logger;
+
 public class Driver {
 
 
 
     public static void main(String[] args) {
+
+        zoo.Driver.log.info("Hello");
+
 
         boolean myBoolean = false;
         boolean myBoolean2 = false;
@@ -72,6 +77,13 @@ public class Driver {
 
         myList.traverseCookies();
 
+        Object[] myObjects = new Object[16];
+
+        myObjects[0]=c1;
+        myObjects[1]=myString;
+
+        System.out.println(myObjects[0]);
+        System.out.println(myObjects[1]);
     }
 
     public static boolean returnTruePlease() {

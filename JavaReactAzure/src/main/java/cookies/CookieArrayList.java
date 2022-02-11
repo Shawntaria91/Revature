@@ -1,23 +1,26 @@
 package cookies;
 
-public class CookieArrayList extends Object {
+public class CookieArrayList {
 
-    private String[] cookieJar;
-    private int currSize;
-
-    public CookieArrayList() {
-        cookieJar = new String[]{"chocolate chip", "oatmeal", "snickerdoodle"};
-        //currSize = cookieJar.length;
-    }
-
-    public static void main(String[] args) {
-        //variables needed:
-        // Array of something
-        // The current amount of something
-        String cookieJar[] = {};
-
-        System.out.println(cookieJar[0]);
-        System.out.println(cookieJar.length);
+    Cookie[] cookieList = new Cookie[16];
+    public Cookie get(int i) {
+        return cookieList[i];
+//    private String[] cookieJar;
+//    private int currSize;
+//
+//    public CookieArrayList() {
+//        cookieJar = new String[]{"chocolate chip", "oatmeal", "snickerdoodle"};
+//        //currSize = cookieJar.length;
+//    }
+//
+//    public static void main(String[] args) {
+//        //variables needed:
+//        // Array of something
+//        // The current amount of something
+//        String cookieJar[] = {};
+//
+//        System.out.println(cookieJar[0]);
+//        System.out.println(cookieJar.length);
         //String newCookieJar[] = new String[currSize++];
 
     // Constructor that creates an initial array of some size

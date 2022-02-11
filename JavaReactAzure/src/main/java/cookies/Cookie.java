@@ -1,6 +1,6 @@
 package cookies;
 
-public class Cookie extends Object {
+public class Cookie extends Object implements Comparable<Cookie> {
 
     private int numChips;
     private double grams;
@@ -54,6 +54,12 @@ public class Cookie extends Object {
 
 
     public String toString() {
+
         return type;
+    }
+
+    @Override
+    public int compareTo(Cookie o) {
+        return 0;
     }
 }
