@@ -1,8 +1,12 @@
-import org.junit.Assert;
-import org.junit.Test;
-
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import zoo.Animal;
 import zoo.AnimalTree;
+import zoo.FakeAnimalException;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class AnimalTreeTest {
 
@@ -22,12 +26,45 @@ public class AnimalTreeTest {
      * Progress on implementation can be measured by the completion of additional tests
      */
 
+    @BeforeAll
+    public static void initialSetup(){
+
+    }
+    @BeforeEach
+    public void setup(){
+
+    }
+    @AfterEach
+    public void tearDown(){
+
+    }
+
     @Test
-    void ContainsAddedAnimal() {
+    void ContainsOneAddedAnimal() throws FakeAnimalException {
         AnimalTree<Animal> tree1 = new AnimalTree<Animal>();
-        Animal a1 = new Animal(Giraffe);
+        Animal a1 = new Animal("Giraffe");
         tree1.add(a1);
-        Assert.assertTrue(tree1.contains(a1));
+        assertTrue(tree1.contains(a1));
+    }
+
+    @Test
+    public void ContainsTwoAddedAnimal() throws FakeAnimalException {
+        AnimalTree<Animal> tree1 = new AnimalTree<Animal>();
+        Animal a1 = new Animal("Giraffe");
+        Animal a2 = new Animal("Lion");
+        tree1.add(a1);
+        tree1.add(a2);
+        assertTrue(tree1.contains(a2));
+    }
+    @Test
+    public void DoesNotContainAnimal() throws FakeAnimalException {
+        AnimalTree<Animal> tree1 = new AnimalTree<Animal>();
+        Animal a1 = new Animal("Giraffe");
+        Animal a2 = new Animal("Lion");
+        Animal a3 = new Animal("Monkey");
+        tree1.add(a1);
+        tree1.add(a2);
+        assertTrue(!(tree1.contains(a3)));
     }
 }
 

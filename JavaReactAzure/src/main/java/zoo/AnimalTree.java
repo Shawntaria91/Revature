@@ -30,7 +30,7 @@ public class AnimalTree<T extends Comparable<T>> {
             AnimalBranch current = head;
             while(true) {
                 if (current.getAnimal().compareTo(a) < 0) {
-                    System.out.println("Current animal: " + current.getAnimal() + ", Branching left");
+                    Driver.log.info("Current animal: " + current.getAnimal() + ", Branching left");
 
                     if (current.left == null) {
                         current.left = new AnimalBranch(a);
@@ -68,7 +68,27 @@ public class AnimalTree<T extends Comparable<T>> {
             AnimalBranch current = head;
             while(true) {
                 if (current.getAnimal().compareTo(a) < 0) {
+                    Driver.log.info("Current animal: " + current + ", Branching left");
 
+                    if (current.left == null) {
+                        Driver.log.info("Animal does not exist: " + a);
+                        return false;
+                    } else {
+                        current = current.left;
+                    }
+
+                } else if (current.getAnimal().compareTo(a) > 0) {
+                    Driver.log.info("Current animal: " + current + "Branching right");
+                    if (current.right == null) {
+                        current.right = new AnimalBranch(a);
+                        Driver.log.info("Animal does not exist: " + a);
+                        return false;
+                    } else {
+                        current = current.right;
+                    }
+                } else {
+                    Driver.log.info("Species " + a + "already exists!");
+                    return true;
                 }
             }
         }
