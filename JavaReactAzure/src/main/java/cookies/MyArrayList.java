@@ -1,7 +1,5 @@
 package cookies;
 
-import java.util.Arrays;
-
 public class MyArrayList {
     //variables needed:
     // Array of something
@@ -97,34 +95,5 @@ public class MyArrayList {
      //   this.cookieArr = cookieArr;
     //}
 
-    public static void main(String[] args) {
-        MyArrayList cookies = new MyArrayList();
-        cookies.add("chocolate chip");
-        cookies.add("sugar");
-        cookies.add("snicker doodle");
-        cookies.add("salted caramel");
-        cookies.add("red velvet");
-        cookies.add("oreo");
-        //cookies.remove("red velvet");
-        //cookies.remove("birthday cake");
-        //cookies.remove(2);
-        //for (int i = 1; i <= 100; i++) {
-        //    cookies.add("cookie type " + i);
-        //}
-        //System.out.println(Arrays.toString());
-        // (this will be the current size)
-        for (int i = 0; i < cookies.getSize(); i++) {
-
-            if (i == cookies.size - 1) {
-                System.out.print(cookies.get(i) + ". ");
-                break;
-            }
-            System.out.print(cookies.get(i) + ", ");
-        }
-        //System.out.println(Arrays.toString(myCookieArray.cookieArr));
-
-        System.out.println("There are " + cookies.getSize() + " cookies in the cookie jar.");
-
-    }
 }
 
