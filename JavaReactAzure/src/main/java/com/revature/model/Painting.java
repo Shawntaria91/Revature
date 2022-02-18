@@ -2,14 +2,14 @@ package com.revature.model;
 
 public class Painting {
     private int artist_id;
-    private String name;
+    private String title;
     private String url;
     private String genre;
     private int year;
 
-    public Painting(int artist_id, String name, String url, String genre, int year) {
+    public Painting(int artist_id, String title, String url, String genre, int year) {
         this.artist_id = artist_id;
-        this.name = name;
+        this.title = title;
         this.url = url;
         this.genre = genre;
         this.year = year;
@@ -23,12 +23,12 @@ public class Painting {
         this.artist_id = artist_id;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getUrl() {
@@ -53,5 +53,16 @@ public class Painting {
 
     public void setYear(int year) {
         this.year = year;
+    }
+
+    @Override
+    public String toString() {
+        return "Painting{" +
+                "artist_id=" + artist_id +
+                ", name='" + title + '\'' +
+                ", url='" + url + '\'' +
+                ", genre='" + genre + '\'' +
+                ", year=" + year +
+                '}';
     }
 }

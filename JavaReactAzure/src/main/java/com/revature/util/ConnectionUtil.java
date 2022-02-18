@@ -10,6 +10,9 @@ import java.util.Properties;
 
 public class ConnectionUtil {
     private static Connection conn;
+    private ConnectionUtil() {
+
+    }
 
     public static Connection getConnection() {
 
