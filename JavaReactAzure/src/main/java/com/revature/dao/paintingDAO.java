@@ -9,7 +9,7 @@ import java.util.List;
 
 import static com.revature.driver.Driver.conn;
 
-public class paintingDAO {
+public class PaintingDAO {
     /*
     what is a DAO?
     DAO stands for Data Access Object
@@ -19,10 +19,10 @@ public class paintingDAO {
     not really - but they are considered best practice
      */
 
-    public paintingDAO(){
+    public PaintingDAO(){
         this(1);
     }
-    public paintingDAO(int i){
+    public PaintingDAO(int i){
         System.out.println("making constructor "+i);
     }
 

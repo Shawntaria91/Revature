@@ -10,7 +10,7 @@ import java.util.List;
 
 import static com.revature.driver.Driver.conn;
 
-public class artistDAO {
+public class ArtistDAO {
 
     public List<Artist> getAllArtists() throws SQLException {
 
