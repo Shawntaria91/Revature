@@ -1,0 +1,21 @@
+Pseudocode
+
+User to start app/game
+
+The user will be told how many scavenger hunt items are available on the list.
+The user will be presented with a math problem(from db)
+The user will be prompted to answer the math problem.
+    if the user answers correctly:
+        The user will receive a scavenger item that is associated to the math problem
+    if the user answers incorrectly:
+        The user will not receive a scavenger item from the list
+
+
+
+Scaled Down Pseudocode
+
+The user will be presented with a math question
+The user will input an int for an answer (using scanner)
+The user will be informed if their answer is correct or not.
+At the end of the quiz, the user will be provided with a score
+    based on how many questions were correct out of the total amount of questions
