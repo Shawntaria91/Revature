@@ -1,5 +1,7 @@
 package com.revature.driver;
 
+import org.apache.log4j.*;
+
 import com.revature.model.Question;
 import com.revature.service.QuestionService;
 import com.revature.util.ConnectionUtil;
@@ -12,9 +14,9 @@ import java.util.Scanner;
 
 public final class Driver {
     public static Connection conn = new ConnectionUtil().getConnection();
+    //public static final Logger logger = Logger.getLogger(Driver.class.getName());
 
     public static void main(String[] args) throws Exception {
-
 
         QuestionService questionService = new QuestionService();
         MyArrayList<Question> allQuestions = questionService.getAllQuestions();
