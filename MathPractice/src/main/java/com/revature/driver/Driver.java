@@ -7,6 +7,7 @@ import com.revature.util.MyArrayList;
 
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public final class Driver {
@@ -29,11 +30,18 @@ public final class Driver {
             int tries = 1;
 
             while (!answerIsCorrect && tries <= 3) {
-                System.out.println(currentQuestion.getQuestion());
-                Scanner sc = new Scanner(System.in);
-                int userAnswer = sc.nextInt();
+                Scanner sc = null;
+                try {
+                    System.out.println(currentQuestion.getQuestion());
+                    sc = new Scanner(System.in);
+                    int userAnswer = sc.nextInt();
+                    answerIsCorrect = userAnswer == currentQuestion.getCorrect_answer();
+                } catch (InputMismatchException e) {
+                    System.out.println("Invalid input! Please enter an integer!");
+                    sc.next();
+                }
 
-                answerIsCorrect = userAnswer == currentQuestion.getCorrect_answer();
+
                 if (answerIsCorrect) {
                     System.out.println("Correct Answer");
                     score++;
@@ -43,7 +51,7 @@ public final class Driver {
                         break;
                     } else if (tries >= 3 && i >= allQuestions.getSize() - 1) {
                         break;
-                    }else {
+                    } else {
                         System.out.println("Try again");
                         tries++;
                     }
