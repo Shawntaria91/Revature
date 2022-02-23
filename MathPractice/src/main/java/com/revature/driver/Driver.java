@@ -16,28 +16,38 @@ public final class Driver {
 
 
         QuestionService questionService = new QuestionService();
-        MyArrayList<Question>allQuestions = questionService.getAllQuestions();
+        MyArrayList<Question> allQuestions = questionService.getAllQuestions();
         conn.setAutoCommit(true);
 
         //main game loop
-        for (int index = 0; index < allQuestions.getSize(); index++){
-            Question currentQuestion = allQuestions.get(index);
+
+        int i;
+        int score = 0;
+        for (i = 0; i < allQuestions.getSize(); i++) {
+            Question currentQuestion = allQuestions.get(i);
             boolean answerIsCorrect = false;
-            while (!answerIsCorrect)
-            {
+            int tries = 1;
+
+            while (!answerIsCorrect && tries <= 3) {
                 System.out.println(currentQuestion.getQuestion());
                 Scanner sc = new Scanner(System.in);
-                int userAnswer= sc.nextInt();
+                int userAnswer = sc.nextInt();
+
                 answerIsCorrect = userAnswer == currentQuestion.getCorrect_answer();
-                if (answerIsCorrect){
+                if (answerIsCorrect) {
                     System.out.println("Correct Answer");
-                }else
-                {
-                    System.out.println("Try again");
+                    score++;
+                } else {
+                    if (tries >= 3 && i < allQuestions.getSize() - 1) {
+                        System.out.println("Keep practicing! Let's try another one!");
+                        break;
+                    } else {
+                        System.out.println("Try again");
+                        tries++;
+                    }
                 }
             }
-
         }
-
+        System.out.println("You have completed the quiz! Your score is " + score + " out of " + i);
     }
 }

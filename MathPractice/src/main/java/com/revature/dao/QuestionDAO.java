@@ -15,7 +15,8 @@ public class QuestionDAO {
         this(1);
     }
     public QuestionDAO(int i){
-        System.out.println("making constructor "+i);
+        System.out.println("Welcome! Let's practice some Algebra!");
+        System.out.println("(Please enter ONLY integers for your answer)");
     }
 
 
