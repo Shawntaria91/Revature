@@ -41,7 +41,9 @@ public final class Driver {
                     if (tries >= 3 && i < allQuestions.getSize() - 1) {
                         System.out.println("Keep practicing! Let's try another one!");
                         break;
-                    } else {
+                    } else if (tries >= 3 && i >= allQuestions.getSize() - 1) {
+                        break;
+                    }else {
                         System.out.println("Try again");
                         tries++;
                     }
