@@ -1,11 +1,11 @@
 package com.revature.dao;
 
 import com.revature.model.Question;
+import com.revature.util.MyArrayList;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.List;
 
 import static com.revature.driver.Driver.conn;
 
@@ -18,32 +18,25 @@ public class QuestionDAO {
         System.out.println("making constructor "+i);
     }
 
-    public List<Question> getAllQuestions() {
-        return null;
-    }
 
-    public Question getQuestion(String question) throws SQLException {
-        Question myQuestion = null;
-        PreparedStatement statement = conn.prepareStatement("Select * From Quiz Where question = ?");
-        int parameterIndex = 0;
-        statement.setString(++parameterIndex, question);
-        /* ++var vs var++?
-        the iteration happens before vs after the line executes
-         */
+    public MyArrayList<Question> getAllQuestions() throws SQLException {
+        //Result container
+        MyArrayList<Question> questions = new MyArrayList<>();
+        //Prep sql
+        PreparedStatement statement = conn.prepareStatement("Select * From quiz");
+        //Execute sql statement
         ResultSet rs = statement.executeQuery();
-        /*
-        if(rs.next()) {
-            rs.beforeFirst();
-        }else*/
+
+        Question myQuestion;
         while(rs.next()){
             myQuestion = new Question(rs.getInt("question_id"),
                     rs.getString("question"),
                     rs.getInt("answer"),
                     rs.getInt("correct_answer"));
+            questions.add(myQuestion);
         }
         rs.close();
-        System.out.println(myQuestion);
-        return myQuestion;
+        return questions;
     }
 
     public void addQuestion(Question Q) throws SQLException {
@@ -58,8 +51,4 @@ public class QuestionDAO {
         statement.setInt(++parameterIndex, Q.getCorrect_answer());
         statement.executeUpdate();
     }
-
-    //public MathProblem getUserAnswer(int userInput) {
-//
-    //}
 }

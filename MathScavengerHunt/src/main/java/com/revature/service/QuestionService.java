@@ -2,6 +2,7 @@ package com.revature.service;
 
 import com.revature.dao.QuestionDAO;
 import com.revature.model.Question;
+import com.revature.util.MyArrayList;
 
 import java.sql.SQLException;
 
@@ -26,6 +27,7 @@ public class QuestionService {
         try {
             Question q = new Question(id, question, answer, correctAnswer);
             questiondao.addQuestion(q);
+            System.out.println(q);
             return true;
         } catch(SQLException e) {
             e.printStackTrace();
@@ -38,5 +40,9 @@ public class QuestionService {
             return true;
         }
         return this.getAnswer(userInput);
+    }
+
+    public MyArrayList<Question> getAllQuestions() throws SQLException {
+        return questiondao.getAllQuestions();
     }
 }

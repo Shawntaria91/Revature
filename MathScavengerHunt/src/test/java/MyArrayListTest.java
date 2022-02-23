@@ -28,12 +28,16 @@ public class MyArrayListTest {
 
     }
 
+   // public boolean contains(CharSequence s) {
+   //     return indexOf(s.toString()) > -1;
+   // }
+
     @Test
     public void ContainsAllQuestions() throws Exception {
         MyArrayList question = new MyArrayList<Question>();
         MyArrayList a1 = new MyArrayList();
         question.add(a1);
-        assertTrue(question.equals(a1));
+        assertTrue(question.contains(a1));
         System.out.println(a1);
     }
 }

@@ -1,6 +1,8 @@
 package com.revature.util;
 
 
+import java.util.Arrays;
+
 public class MyArrayList<T> {
 
     ConnectionUtil conn = new ConnectionUtil();
@@ -65,6 +67,17 @@ public class MyArrayList<T> {
         } else {
             throw new Exception("Invalid id");
         }
+    }
+    public boolean contains(T a1) {
+        boolean contains = false;
+        for(int i =0;i<myArr.length;i++){
+            if (a1 == myArr[i])
+            {
+                contains = true;
+                break;
+            }
+        }
+        return contains;
     }
 
 }
