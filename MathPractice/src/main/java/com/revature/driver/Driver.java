@@ -50,6 +50,6 @@ public final class Driver {
                 }
             }
         }
-        System.out.println("You have completed the quiz! Your score is " + score + " out of " + i);
+        System.out.println("You have completed the quiz! Your score is " + score + " out of " + i+"!");
     }
 }

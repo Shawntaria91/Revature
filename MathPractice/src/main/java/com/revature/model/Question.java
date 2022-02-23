@@ -25,25 +25,7 @@ public class Question<T> {
     public void populateQuestions() throws SQLException {
         numQuestions=0;
         String SQL="SELECT question_id, question FROM Quiz";
-        //ResultSet result = ConnectionUtil.query(SQL);
     }
-
-    //public static void takeQuiz(Question[] questions) {
-    //    int score = 0;
-    //    Scanner keyboardInput = new Scanner(System.in);
-    //    System.out.println("What's your name?");
-    //    keyboardInput.next();
-//
-    //    for (int i = 0; i < questions.length; i++) {
-    //        System.out.println(questions[i].prompt);
-    //        int answer = Integer.parseInt(keyboardInput.nextLine());
-//
-    //        if (answer == (questions[i].answer)) {
-    //            score++;
-    //        }
-    //    }
-    //    System.out.println("You got " + score + "/" + questions.length);
-    //}
 
     public int getQuestion_id() {
         return question_id;

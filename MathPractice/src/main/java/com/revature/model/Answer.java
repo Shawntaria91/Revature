@@ -26,8 +26,4 @@ public class Answer {
         this.correct = correct;
     }
 
-    //@Override
-    //public String toString(char display) {
-    //    return display+ ": " + userResponse;
-    //}
 }
