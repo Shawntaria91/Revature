@@ -24,7 +24,7 @@ public class QuestionDAO {
 
     public Question getQuestion(String question) throws SQLException {
         Question myQuestion = null;
-        PreparedStatement statement = conn.prepareStatement("Select * From MathProblem Where question = ?");
+        PreparedStatement statement = conn.prepareStatement("Select * From Quiz Where question = ?");
         int parameterIndex = 0;
         statement.setString(++parameterIndex, question);
         /* ++var vs var++?
@@ -42,6 +42,7 @@ public class QuestionDAO {
                     rs.getInt("correct_answer"));
         }
         rs.close();
+        System.out.println(myQuestion);
         return myQuestion;
     }
 

@@ -11,6 +11,8 @@ import java.sql.SQLException;
 
 import com.revature.util.MyArrayList;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 public class MyArrayListTest {
 
     @BeforeAll
@@ -26,8 +28,12 @@ public class MyArrayListTest {
 
     }
 
-    //@Test
-    //public void ContainsAllQuestions() throws Exception {
-    //    MyArrayList<Question> question1 = new Question();
-    //}
+    @Test
+    public void ContainsAllQuestions() throws Exception {
+        MyArrayList question = new MyArrayList<Question>();
+        MyArrayList a1 = new MyArrayList();
+        question.add(a1);
+        assertTrue(question.equals(a1));
+        System.out.println(a1);
+    }
 }

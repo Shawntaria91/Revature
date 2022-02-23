@@ -4,9 +4,10 @@ public class Answer {
     private int answer;
     private boolean correct;
 
-    public Answer(int answer, boolean correct) {
+    public Integer Answer(int answer, boolean correct) {
         this.answer = answer;
         this.correct = correct;
+        return null;
     }
 
     public int getAnswer() {
