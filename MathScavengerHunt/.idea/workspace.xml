@@ -5,11 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b906665f-255f-4207-898e-8a8fea5ae6d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/projectone/driver/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/projectone/repository/MathQuestionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/projectone/repository/ScavengerItemRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/projectone/service/MathQuestionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/projectone/service/ScavengerItemService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/Revature.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
@@ -21,10 +16,10 @@
       <change beforePath="$PROJECT_DIR$/../JavaReactAzure/src/test/java/MuseumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaReactAzure/src/test/java/MuseumTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JavaReactAzure/target/classes/com/revature/dao/paintingDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaReactAzure/target/classes/com/revature/dao/paintingDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MathPractice/target/classes/com/revature/driver/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MathPractice/target/classes/com/revature/driver/Driver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectone/model/MathQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectone/model/MathQuestion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectone/util/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectone/util/HibernateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projectone/util/HibernateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/projectone/util/HibernateUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
