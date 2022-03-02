@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b906665f-255f-4207-898e-8a8fea5ae6d9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../JavaReactAzure/src/main/java/algos/AlgosRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaReactAzure/src/main/java/frontControllerDesignPattern/ArtistController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaReactAzure/src/main/java/frontControllerDesignPattern/ArtistRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaReactAzure/src/main/java/frontControllerDesignPattern/DispatcherServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaReactAzure/src/main/java/frontControllerDesignPattern/PaintingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaReactAzure/src/main/java/frontControllerDesignPattern/PaintingRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaReactAzure/src/main/java/frontControllerDesignPattern/RequestHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaReactAzure/src/main/java/hibernate/Director.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaReactAzure/src/main/java/hibernate/DirectorRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaReactAzure/src/main/java/hibernate/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaReactAzure/src/main/java/hibernate/HibernateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaReactAzure/src/main/java/hibernate/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaReactAzure/src/main/java/hibernate/MovieRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaReactAzure/src/main/java/lambdas/RandomGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaReactAzure/src/main/java/lambdas/lambdasExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaReactAzure/src/main/java/rest/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaReactAzure/src/main/java/rest/config/RestConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaReactAzure/src/main/java/rest/resource/ExampleResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaReactAzure/src/main/java/servlets/AddServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaReactAzure/src/main/java/servlets/ArtistServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaReactAzure/src/main/java/servlets/SecretServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaReactAzure/src/main/java/threading/BankAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaReactAzure/src/main/java/threading/ExtendThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaReactAzure/src/main/java/threading/ThreadImplementCallable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaReactAzure/src/main/java/threading/ThreadImplementRunnable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaReactAzure/src/main/java/threading/ThreadRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaReactAzure/src/main/resources/hibernate.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaReactAzure/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaReactAzure/src/main/webapp/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaReactAzure/src/test/java/MuseumTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/projectone/model/MathQuestion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/projectone/model/ScavengerItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/projectone/util/HibernateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/Revature.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaReactAzure/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaReactAzure/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaReactAzure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaReactAzure/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaReactAzure/src/main/java/com/revature/dao/paintingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaReactAzure/src/main/java/com/revature/dao/paintingDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaReactAzure/target/classes/com/revature/dao/paintingDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaReactAzure/target/classes/com/revature/dao/paintingDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MathPractice/target/classes/com/revature/driver/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MathPractice/target/classes/com/revature/driver/Driver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MathQuizProject.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/dao/MyAbstractDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/dao/QuestionDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/driver/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/model/Answer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/model/Question.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/service/QuestionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/util/ConnectionUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/util/MyArrayList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MyArrayListTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/QuestionDAOTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/dao/MyAbstractDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/dao/QuestionDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/driver/Driver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/model/Answer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/model/Question.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/service/QuestionService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/util/ConnectionUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/util/MyArrayList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/MyArrayListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/QuestionDAOTest.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="25q5nDmI7divdvqO4uvGtgEKe3Q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
+      <option name="adminPort" value="8005" />
+      <option name="contextPath" value="/MathScavengerHunt" />
+      <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
+      <option name="envOptions" />
+      <option name="passParentEnvironmentVariables" value="true" />
+      <option name="port" value="8080" />
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat/9.0.58" />
+          <option name="number" value="0" />
+          <option name="path" value="C:\Program Files\apache-tomcat-9.0.58" />
+          <option name="version" value="9.0.58.0" />
+        </TomcatInfo>
+      </option>
+      <option name="vmOptions" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b906665f-255f-4207-898e-8a8fea5ae6d9" name="Changes" comment="" />
+      <created>1646241942315</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646241942315</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
