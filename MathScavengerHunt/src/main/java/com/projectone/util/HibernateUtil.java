@@ -26,11 +26,7 @@ public class HibernateUtil {
 
             // Add properties to our configuration
             configuration.setProperties(props);
-            // ONE ADDITIONAL STEP I NEED TO INCLUDE
-            /*
-            configuration.addAnnotatedClass(Artist.class);
-            configuration.addAnnotatedClass(Painting.class);
-*/
+
             configuration.addAnnotatedClass(MathQuestion.class);
             configuration.addAnnotatedClass(ScavengerItem.class);
 

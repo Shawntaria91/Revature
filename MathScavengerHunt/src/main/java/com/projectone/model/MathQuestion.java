@@ -25,8 +25,8 @@ public class MathQuestion {
     public ScavengerItem scavengerItem;
     @Column(nullable = false)
     public int correctAnswer;
-    @Column(nullable = true)
-    public int userInput;
+    @Column(nullable = false)
+    public int level;
 
     public int getCorrectAnswer() {
         return correctAnswer;
@@ -36,12 +36,12 @@ public class MathQuestion {
         this.correctAnswer = correctAnswer;
     }
 
-    public int getUserInput() {
-        return userInput;
+    public int getLevel() {
+        return level;
     }
 
-    public void setUserInput(int userInput) {
-        this.userInput = userInput;
+    public void setLevel(int userInput) {
+        this.level = level;
     }
 
     public int getMathQuestion_id() {
