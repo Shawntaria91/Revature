@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="JavaReactAzure/Hibernate">
+  <database-model serializer="dbm" dbms="AZURE" family-id="AZURE" format-version="4.32">
+    <root id="1">
+      <Dbms>AZURE</Dbms>
+      <ServerVersion>12.0.2327</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="db1">
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+      <Current>1</Current>
+      <Fingerprint>5.44605/BEBBA794-4330-469E-B8EF-A42E9B1282DC@revashawn</Fingerprint>
+      <Grants>5|database||1|connect|G</Grants>
+      <ObjectId>5</ObjectId>
+      <PermissionsCheckSum>1059020366</PermissionsCheckSum>
+    </database>
+    <database id="3" parent="1" name="master">
+      <ObjectId>1</ObjectId>
+    </database>
+    <login id="4" parent="1" name="##MS_DefinitionReader##">
+      <Enabled>1</Enabled>
+      <ObjectId>13</ObjectId>
+      <Type>server-role</Type>
+    </login>
+    <login id="5" parent="1" name="##MS_ServerStateManager##">
+      <Enabled>1</Enabled>
+      <ObjectId>12</ObjectId>
+      <Type>server-role</Type>
+    </login>
+    <login id="6" parent="1" name="##MS_ServerStateReader##">
+      <Enabled>1</Enabled>
+      <ObjectId>11</ObjectId>
+      <Type>server-role</Type>
+    </login>
+    <role id="7" parent="2" name="INFORMATION_SCHEMA">
+      <AuthType>none</AuthType>
+      <ObjectId>3</ObjectId>
+    </role>
+    <role id="8" parent="2" name="db_accessadmin">
+      <AuthType>none</AuthType>
+      <ObjectId>16385</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="9" parent="2" name="db_backupoperator">
+      <AuthType>none</AuthType>
+      <ObjectId>16389</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="10" parent="2" name="db_datareader">
+      <AuthType>none</AuthType>
+      <ObjectId>16390</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="11" parent="2" name="db_datawriter">
+      <AuthType>none</AuthType>
+      <ObjectId>16391</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="12" parent="2" name="db_ddladmin">
+      <AuthType>none</AuthType>
+      <ObjectId>16387</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="13" parent="2" name="db_denydatareader">
+      <AuthType>none</AuthType>
+      <ObjectId>16392</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="14" parent="2" name="db_denydatawriter">
+      <AuthType>none</AuthType>
+      <ObjectId>16393</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="15" parent="2" name="db_owner">
+      <AuthType>none</AuthType>
+      <ObjectId>16384</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="16" parent="2" name="db_securityadmin">
+      <AuthType>none</AuthType>
+      <ObjectId>16386</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="17" parent="2" name="dbo">
+      <AuthType>instance</AuthType>
+      <DefaultSchema>dbo</DefaultSchema>
+      <ObjectId>1</ObjectId>
+    </role>
+    <role id="18" parent="2" name="guest">
+      <AuthType>none</AuthType>
+      <DefaultSchema>guest</DefaultSchema>
+      <ObjectId>2</ObjectId>
+    </role>
+    <role id="19" parent="2" name="public">
+      <AuthType>none</AuthType>
+      <ObjectId>0</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="20" parent="2" name="sys">
+      <AuthType>none</AuthType>
+      <ObjectId>4</ObjectId>
+    </role>
+    <schema id="21" parent="2" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+    </schema>
+    <schema id="22" parent="2" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+    </schema>
+    <schema id="23" parent="2" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+    </schema>
+    <schema id="24" parent="2" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+    </schema>
+    <schema id="25" parent="2" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+    </schema>
+    <schema id="26" parent="2" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+    </schema>
+    <schema id="27" parent="2" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+    </schema>
+    <schema id="28" parent="2" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+    </schema>
+    <schema id="29" parent="2" name="db_owner">
+      <ObjectId>16384</ObjectId>
+    </schema>
+    <schema id="30" parent="2" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+    </schema>
+    <schema id="31" parent="2" name="dbo">
+      <Current>1</Current>
+      <IntrospectionTimestamp>2022-03-04.12:11:02.510</IntrospectionTimestamp>
+      <ObjectId>1</ObjectId>
+    </schema>
+    <schema id="32" parent="2" name="guest">
+      <ObjectId>2</ObjectId>
+    </schema>
+    <schema id="33" parent="2" name="sys">
+      <ObjectId>4</ObjectId>
+    </schema>
+    <table id="34" parent="31" name="artist">
+      <CreatedTimestamp>2022-02-18.20:19:23.270</CreatedTimestamp>
+      <ModifiedTimestamp>2022-02-18.20:19:23.340</ModifiedTimestamp>
+      <ObjectId>210099789</ObjectId>
+    </table>
+    <table id="35" parent="31" name="author">
+      <CreatedTimestamp>2022-02-24.11:45:51.230</CreatedTimestamp>
+      <ModifiedTimestamp>2022-02-24.11:45:51.230</ModifiedTimestamp>
+      <ObjectId>1442104178</ObjectId>
+    </table>
+    <table id="36" parent="31" name="book">
+      <CreatedTimestamp>2022-02-24.11:45:51.167</CreatedTimestamp>
+      <ModifiedTimestamp>2022-02-24.11:45:51.167</ModifiedTimestamp>
+      <ObjectId>1410104064</ObjectId>
+    </table>
+    <table id="37" parent="31" name="book_to_author_map">
+      <CreatedTimestamp>2022-02-24.11:45:51.290</CreatedTimestamp>
+      <ModifiedTimestamp>2022-02-24.11:45:51.290</ModifiedTimestamp>
+      <ObjectId>1474104292</ObjectId>
+    </table>
+    <table id="38" parent="31" name="customer">
+      <CreatedTimestamp>2022-02-24.11:45:51.353</CreatedTimestamp>
+      <ModifiedTimestamp>2022-02-24.11:45:51.353</ModifiedTimestamp>
+      <ObjectId>1490104349</ObjectId>
+    </table>
+    <table id="39" parent="31" name="event">
+      <CreatedTimestamp>2022-02-24.11:45:51.413</CreatedTimestamp>
+      <ModifiedTimestamp>2022-02-24.11:45:51.413</ModifiedTimestamp>
+      <ObjectId>1522104463</ObjectId>
+    </table>
+    <table id="40" parent="31" name="mathQuestion">
+      <CreatedTimestamp>2022-03-02.16:56:01.767</CreatedTimestamp>
+      <ModifiedTimestamp>2022-03-02.16:56:02.053</ModifiedTimestamp>
+      <ObjectId>1618104805</ObjectId>
+    </table>
+    <table id="41" parent="31" name="painting">
+      <CreatedTimestamp>2022-02-18.20:19:23.340</CreatedTimestamp>
+      <ModifiedTimestamp>2022-02-18.20:19:23.340</ModifiedTimestamp>
+      <ObjectId>242099903</ObjectId>
+    </table>
+    <table id="42" parent="31" name="quiz">
+      <CreatedTimestamp>2022-02-23.09:17:47.160</CreatedTimestamp>
+      <ModifiedTimestamp>2022-02-23.09:17:47.160</ModifiedTimestamp>
+      <ObjectId>674101442</ObjectId>
+    </table>
+    <table id="43" parent="31" name="scavengerItem">
+      <CreatedTimestamp>2022-03-02.16:56:01.963</CreatedTimestamp>
+      <ModifiedTimestamp>2022-03-02.16:56:02.053</ModifiedTimestamp>
+      <ObjectId>1650104919</ObjectId>
+    </table>
+    <column id="44" parent="34" name="artist_id">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="45" parent="34" name="name">
+      <DataType>varchar(40 char)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <index id="46" parent="34" name="PK__artist__6CD04001443A66A2">
+      <Clustering>1</Clustering>
+      <ColNames>artist_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Position>1</Position>
+      <Unique>1</Unique>
+    </index>
+    <key id="47" parent="34" name="PK__artist__6CD04001443A66A2">
+      <ColNames>artist_id</ColNames>
+      <CreatedTimestamp>2022-02-18.20:19:23.270</CreatedTimestamp>
+      <ModifiedTimestamp>2022-02-18.20:19:23.270</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>226099846</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK__artist__6CD04001443A66A2</UnderlyingIndexName>
+    </key>
+    <column id="48" parent="35" name="id">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="49" parent="35" name="first_name">
+      <DataType>varchar(100 char)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="50" parent="35" name="last_name">
+      <DataType>varchar(100 char)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <index id="51" parent="35" name="PK__author__3213E83FC4EF074B">
+      <Clustering>1</Clustering>
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Position>1</Position>
+      <Unique>1</Unique>
+    </index>
+    <key id="52" parent="35" name="PK__author__3213E83FC4EF074B">
+      <ColNames>id</ColNames>
+      <CreatedTimestamp>2022-02-24.11:45:51.230</CreatedTimestamp>
+      <ModifiedTimestamp>2022-02-24.11:45:51.230</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1458104235</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK__author__3213E83FC4EF074B</UnderlyingIndexName>
+    </key>
+    <column id="53" parent="36" name="id">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="54" parent="36" name="title">
+      <DataType>varchar(100 char)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="55" parent="36" name="genre">
+      <DataType>varchar(100 char)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="56" parent="36" name="year_published">
+      <DataType>int|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="57" parent="36" name="available">
+      <DataType>bit|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <index id="58" parent="36" name="PK__book__3213E83FAE8DE969">
+      <Clustering>1</Clustering>
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Position>1</Position>
+      <Unique>1</Unique>
+    </index>
+    <key id="59" parent="36" name="PK__book__3213E83FAE8DE969">
+      <ColNames>id</ColNames>
+      <CreatedTimestamp>2022-02-24.11:45:51.167</CreatedTimestamp>
+      <ModifiedTimestamp>2022-02-24.11:45:51.167</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1426104121</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK__book__3213E83FAE8DE969</UnderlyingIndexName>
+    </key>
+    <column id="60" parent="37" name="book_id">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="61" parent="37" name="author_id">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="62" parent="38" name="id">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="63" parent="38" name="name">
+      <DataType>varchar(100 char)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <index id="64" parent="38" name="PK__customer__3213E83F1CAB7471">
+      <Clustering>1</Clustering>
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Position>1</Position>
+      <Unique>1</Unique>
+    </index>
+    <key id="65" parent="38" name="PK__customer__3213E83F1CAB7471">
+      <ColNames>id</ColNames>
+      <CreatedTimestamp>2022-02-24.11:45:51.353</CreatedTimestamp>
+      <ModifiedTimestamp>2022-02-24.11:45:51.353</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1506104406</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK__customer__3213E83F1CAB7471</UnderlyingIndexName>
+    </key>
+    <column id="66" parent="39" name="id">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>1(19)</SequenceIdentity>
+    </column>
+    <column id="67" parent="39" name="event_type">
+      <DataType>varchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="68" parent="39" name="customer_id">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="69" parent="39" name="book_id">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="70" parent="39" name="date_time">
+      <DataType>varchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <index id="71" parent="39" name="PK__event__3213E83FE6F32EDA">
+      <Clustering>1</Clustering>
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Position>1</Position>
+      <Unique>1</Unique>
+    </index>
+    <key id="72" parent="39" name="PK__event__3213E83FE6F32EDA">
+      <ColNames>id</ColNames>
+      <CreatedTimestamp>2022-02-24.11:45:51.417</CreatedTimestamp>
+      <ModifiedTimestamp>2022-02-24.11:45:51.417</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1538104520</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK__event__3213E83FE6F32EDA</UnderlyingIndexName>
+    </key>
+    <column id="73" parent="40" name="mathQuestion_id">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="74" parent="40" name="correctAnswer">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="75" parent="40" name="level">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="76" parent="40" name="question">
+      <DataType>varchar(255 char)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="77" parent="40" name="scavengerItem_id">
+      <DataType>int|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <foreign-key id="78" parent="40" name="FKjb5uwsha3h64nha9q6dvjakag">
+      <ColNames>scavengerItem_id</ColNames>
+      <CreatedTimestamp>2022-03-02.16:56:02.053</CreatedTimestamp>
+      <ModifiedTimestamp>2022-03-02.16:56:02.053</ModifiedTimestamp>
+      <ObjectId>1682105033</ObjectId>
+      <RefColNames>scavengerItem_id</RefColNames>
+      <RefKeyName>PK__scavenge__E194ACF8D8FB19F1</RefKeyName>
+      <RefTableId>1650104919</RefTableId>
+      <RefTableName>scavengerItem</RefTableName>
+    </foreign-key>
+    <index id="79" parent="40" name="PK__mathQues__A7CEAB2653074C25">
+      <Clustering>1</Clustering>
+      <ColNames>mathQuestion_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Position>1</Position>
+      <Unique>1</Unique>
+    </index>
+    <key id="80" parent="40" name="PK__mathQues__A7CEAB2653074C25">
+      <ColNames>mathQuestion_id</ColNames>
+      <CreatedTimestamp>2022-03-02.16:56:01.890</CreatedTimestamp>
+      <ModifiedTimestamp>2022-03-02.16:56:01.890</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1634104862</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK__mathQues__A7CEAB2653074C25</UnderlyingIndexName>
+    </key>
+    <column id="81" parent="41" name="artist_id">
+      <DataType>int|0s</DataType>
+      <Position>1</Position>
+    </column>
+    <column id="82" parent="41" name="title">
+      <DataType>varchar(40 char)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="83" parent="41" name="url">
+      <DataType>varchar(40 char)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="84" parent="41" name="genre">
+      <DataType>varchar(40 char)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="85" parent="41" name="year_made">
+      <DataType>int|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <foreign-key id="86" parent="41" name="FK__painting__artist__0F624AF8">
+      <ColNames>artist_id</ColNames>
+      <CreatedTimestamp>2022-02-18.20:19:23.340</CreatedTimestamp>
+      <ModifiedTimestamp>2022-02-18.20:19:23.340</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>258099960</ObjectId>
+      <RefColNames>artist_id</RefColNames>
+      <RefKeyName>PK__artist__6CD04001443A66A2</RefKeyName>
+      <RefTableId>210099789</RefTableId>
+      <RefTableName>artist</RefTableName>
+    </foreign-key>
+    <column id="87" parent="42" name="question_id">
+      <DataType>int|0s</DataType>
+      <Position>1</Position>
+    </column>
+    <column id="88" parent="42" name="question">
+      <DataType>varchar(40 char)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="89" parent="42" name="answer">
+      <DataType>int|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="90" parent="42" name="correct_answer">
+      <DataType>int|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="91" parent="43" name="scavengerItem_id">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="92" parent="43" name="name">
+      <DataType>varchar(255 char)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <index id="93" parent="43" name="PK__scavenge__E194ACF8D8FB19F1">
+      <Clustering>1</Clustering>
+      <ColNames>scavengerItem_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Position>1</Position>
+      <Unique>1</Unique>
+    </index>
+    <key id="94" parent="43" name="PK__scavenge__E194ACF8D8FB19F1">
+      <ColNames>scavengerItem_id</ColNames>
+      <CreatedTimestamp>2022-03-02.16:56:01.967</CreatedTimestamp>
+      <ModifiedTimestamp>2022-03-02.16:56:01.967</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1666104976</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK__scavenge__E194ACF8D8FB19F1</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>

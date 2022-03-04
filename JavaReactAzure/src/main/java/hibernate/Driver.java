@@ -1,13 +1,8 @@
 package hibernate;
 
-import org.hibernate.SQLQuery;
-import org.hibernate.Session;
-import org.hibernate.Transaction;
-
-import java.io.IOException;
 import java.util.List;
 
-public class driver {
+public class Driver {
     public static void main(String[] args) {
         /*native sql hibernate query
         basically, this is bad

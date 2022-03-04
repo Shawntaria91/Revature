@@ -2,6 +2,7 @@ package com.revature.dao;
 
 import com.revature.model.Painting;
 
+import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -19,11 +20,15 @@ public class PaintingDAO {
     not really - but they are considered best practice
      */
 
-    public PaintingDAO(){
+    public PaintingDAO(Connection mockConnection){
         this(1);
     }
     public PaintingDAO(int i){
         System.out.println("making constructor "+i);
+    }
+
+    public PaintingDAO() {
+
     }
 
     public List<Painting> getAllPaintings() {

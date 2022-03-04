@@ -1,2 +1,4 @@
-package spring.repository;public class Nonsense {
+package spring.repository;
+
+public class Nonsense {
 }
