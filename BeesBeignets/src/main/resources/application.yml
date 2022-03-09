@@ -1,0 +1,11 @@
+//spring:
+//  datasource:
+//    username: revatureshawn
+//    password: KingQueen052290!
+//    url: jdbc:sqlserver://revashawn.database.windows.net:1433;database=db1;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+//    driver-class-name:
+//  jpa:
+//    show-sql: true
+//    hibernate:
+//      ddl-auto: update
+//    properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
