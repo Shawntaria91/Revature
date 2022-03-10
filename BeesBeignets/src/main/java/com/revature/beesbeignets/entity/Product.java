@@ -14,9 +14,8 @@ import javax.persistence.*;
 public class Product {
 
     @Id
-    @GeneratedValue
-    private int id;
-    @Column(unique = true)
+    private int pid;
+    //@Column(unique = true)
     private String productName;
     private int quantity;
     private double price;

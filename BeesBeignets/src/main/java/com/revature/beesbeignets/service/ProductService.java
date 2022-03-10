@@ -28,24 +28,24 @@ public class ProductService {
         return repository.findAll();
     }
 
-    public Product getProductById(int id) {
+    public Product getProductById(int pid) {
 
-        return repository.findById(id).orElse(null);
+        return repository.findById(pid).orElse(null);
     }
 
-    public Product getProductByName(String name) {
+    public Product getProductByName(String productName) {
 
-        return repository.findByName(name);
+        return repository.findByName(productName);
     }
 
-    public String deleteProduct(int id) {
-        repository.deleteById(id);
-        return "Product with ID: " + id + " removed!";
+    public String deleteProduct(int pid) {
+        repository.deleteById(pid);
+        return "Product with ID: " + pid + " removed!";
     }
 
     public Product updateProduct(Product product) {
 
-        Product existingProd=repository.findById(product.getId()).orElse(null);
+        Product existingProd=repository.findById(product.getPid()).orElse(null);
         existingProd.setProductName(product.getProductName());
         existingProd.setQuantity(product.getQuantity());
         existingProd.setPrice(product.getPrice());
