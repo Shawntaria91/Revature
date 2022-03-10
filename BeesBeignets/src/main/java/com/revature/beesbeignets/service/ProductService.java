@@ -40,7 +40,7 @@ public class ProductService {
 
     public String deleteProduct(int id) {
         repository.deleteById(id);
-        return "Product with " + id + " removed!";
+        return "Product with ID: " + id + " removed!";
     }
 
     public Product updateProduct(Product product) {
