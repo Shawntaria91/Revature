@@ -1,6 +1,6 @@
 # Bee's Beignets - A Little Cafe Shop
 ## Project Description
-Bee's Beignets is spring boot application that leverages Postman to call method actions. 
+Bee's Beignets is a spring boot application that leverages Postman to call method actions, allowing the Postman end user to add and modify products for the shop, as well as place orders for customers. 
 ## Technologies Used
 * Java
 * Maven
