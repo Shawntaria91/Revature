@@ -10,7 +10,8 @@ Bee's Beignets is a spring boot application that leverages Postman to call metho
 * DBeaver
 * Hibernate
 * Postman
-## Features
+## Features and Usage
+http://localhost:9001/
 POST:
 * Ability to add a product: http://localhost:9001/addProduct
 * Ability to add multiple products: http://localhost:9001/addProducts
@@ -28,5 +29,4 @@ DELETE:
 PUT:
 * Ability to modify and update an item or order: http://localhost:9001/update
 ## Getting Started
-## Usage
-http://localhost:9001/
+
